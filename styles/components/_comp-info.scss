@@ -1,0 +1,13 @@
+.comp-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    font-size: 14px;
+    width: 20%;
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}

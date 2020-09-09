@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        
+        th {
+            border: 2px solid #ccc;
+            width: 33%;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+    }
+}

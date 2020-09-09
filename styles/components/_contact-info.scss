@@ -1,0 +1,19 @@
+.contact-info {
+    width: 35%;
+    height: 100%;
+    user-select: text;
+    
+
+    .info-card {
+        margin-top: 30px;
+        position: relative;
+        
+        p {
+            margin-left: 20px;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}

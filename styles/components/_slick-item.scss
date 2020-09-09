@@ -1,0 +1,20 @@
+.slick-item {
+    position: relative;
+    outline: none;
+    border: none;
+
+    .image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        // justify-self: center;
+
+        img {
+            object-fit: fill;
+            object-position: center;
+            width: 100%;
+        }
+    }
+}

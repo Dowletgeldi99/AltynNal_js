@@ -1,0 +1,28 @@
+.button-hide {
+    display: none;
+}
+
+.button-show {
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    // width: 30px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    background: transparent;
+    line-height: 15px;
+    color: #444;
+    cursor: pointer;
+    transition: .5s ease;
+    z-index: 2;
+
+    &:hover {
+        border: 1px solid red;
+        color: red;
+        transition: .5s ease;
+    }
+}

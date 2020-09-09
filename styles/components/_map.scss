@@ -1,0 +1,23 @@
+.map {
+    position: relative;
+    cursor: pointer;
+
+    .map-toggle {
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        transform: scaleY(0);
+        visibility: hidden;
+        transform-origin: top;
+        transition: .3s ease 1s;
+    }
+
+    &:hover {
+
+        .map-toggle {
+            visibility: visible;
+            transform: scaleY(1);
+            transition: .3s ease;
+        }
+    }
+}

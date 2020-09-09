@@ -1,0 +1,38 @@
+.nav {
+    margin-right: 30px;
+    
+    ul {
+        list-style: none;
+
+        .nav-link {
+            display: inline-block;
+            font-size: 18px;
+            position: relative;
+
+            &:hover {
+                .dropdown {
+                    opacity: 1;
+                    transform: scaleX(1);
+                    transition: .3s cubic-bezier(.58,-0.35,.56,1.57);
+                }
+            }
+
+            & + li {
+                margin-left: 30px;
+            }
+
+            a {
+                text-decoration: none;
+                transition: .3s ease;
+                color: #444;
+            }
+
+            &:hover {
+                .nav-link-red {
+                    color: red;
+                    transition: .5s ease;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.info-card {
+    display: flex;
+    align-items: flex-end;
+
+    &:hover {
+        .img-wrap {
+            .active-img {
+                display: block;
+                transition: .5s ease;
+            }
+
+            .static-img {
+                display: none;
+            }
+        }
+    }
+
+    .img-wrap {
+        max-width: 20px;
+        user-select: none;
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .active-img {
+            display: none;
+            transition: .5s ease;
+        }
+    }
+
+    // .contact-map {
+    //     position: relative;
+
+    //     .map-toggle {
+    //         display: none;  
+    //         position: absolute;
+    //         visibility: hidden;
+    //         transform: translateX(-50%) scaleY(1);
+    //         bottom: -100%;
+    //         left: 50%;
+    //     }
+    // }
+}

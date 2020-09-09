@@ -1,0 +1,22 @@
+.sidebar {
+    width: 25%;
+    padding: 20px 40px 0;
+    text-align: left;
+
+    ul {
+        list-style: none;
+        
+        li {
+            background: #cccccc;
+            text-transform: capitalize;
+            padding: 15px;
+            cursor: pointer;
+            margin-bottom: 2px;
+        }
+    }
+
+    .show {
+        display: block;
+    }
+
+}

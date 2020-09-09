@@ -1,0 +1,34 @@
+.social {
+    margin-top: 40px;
+    font-size: 20px;
+
+    a {
+        position: relative;
+        text-decoration: none;
+        color: rgba(#fff , .5);
+        transition: .3s ease;
+        
+        & ~ a {
+            margin-left: 20px;
+        }
+
+        &::after {
+            content: "|";
+            position: absolute;
+            left: -14px;
+            color: #fff;
+            line-height: 20px;
+            opacity: 1;
+        }
+        
+        &:hover {
+            color: #fff;
+            transition: .3s ease;
+            
+        }
+
+        &:first-child::after {
+            display: none;
+        }
+    }
+}

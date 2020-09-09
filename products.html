@@ -1,0 +1,167 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altyn Nal</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" defer></script>
+    <!-- Slick Carousel Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer>
+    </script>
+    <!-- Slick Carousel Styles -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- Fontawesome script -->
+    <script src="https://kit.fontawesome.com/9b46de4310.js" crossorigin="anonymous" defer></script>
+    <!-- Custom script -->
+    <script src="./js/app.js" defer></script>
+    <script src="./js/products.js" defer></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="content">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/logo.png" alt="test-logo">
+                    </a>
+                </div>
+                <div class="h-menu">
+                    <nav class="nav">
+                        <ul>
+                            <!-- <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Медиа</a></li>
+                            <li><a href="#">Cотрудники</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О нас</a></li> -->
+                            <li class="nav-link"><a class="nav-link-red" href="./products.html">Products</a>
+                                <!-- <ul class="dropdown">
+                                    <li class="dropdown-link"><a href="#">de-icing road Salt</a></li>
+                                    <li class="dropdown-link"><a href="#">food salt</a></li>
+                                    <li class="dropdown-link"><a href="#">industrial salt</a></li>
+                                    <li class="dropdown-link"><a href="#">natural raw</a></li>
+                                    <li class="dropdown-link"><a href="#">water treatment</a></li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-link"><a class="nav-link-red" href="./media.html">Media</a>
+                            <!-- <ul class="dropdown">
+                                <li class="dropdown-link"><a href="#">photo gallery</a></li>
+                                <li class="dropdown-link"><a href="#">video gallery</a></li>
+                            </ul> -->
+                            </li>
+                            <li class="nav-link"><a class="nav-link-red" href="./about_us.html">About Us</a></li>
+                            <li class="nav-link"><a class="nav-link-red" href="./hr.html">HR</a></li>
+                            <li class="nav-link"><a class="nav-link-red" href="./contacts.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <button class="cat-btn" id="catBtn">Catalog</button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="page-loader">
+                <div class="loader-animation">
+                    <img src="./assets/salt-loader-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="blur-section">
+                <div class="blur-section-menu">
+                   <h1>Products</h1>
+                   <ul id="products-list">
+                       <li><a href="./index.html"><span>Home</span></a></li>
+                       <li class="right-arrow"></li>
+                       <li><a id="products-link"><span>Products</span></a></li>
+                   </ul>
+                </div>
+            </div>
+            <!-- <aside class="sidebar">
+                <ul>
+                    <li class="show" id="de-icing_salt">de-icing road salt</li>
+                    <li class="hide" id="food_salt">food salt</li>
+                    <li class="hide" id="industrial_salt"> industrial salt</li>
+                    <li class="hide" id="natural_salt">natural raw salt</li>
+                    <li class="hide" id="water_salt">water treatment salt</li>
+                </ul>
+            </aside> -->
+
+            <div class="content">
+                <div class="product-cards">
+                    <button class="button-hide" id="btnGetBack" title="get back">&#8592; Back</button>
+                    <div class="product-card" id="de-icing-salt">
+                        <div class="product-img">
+                            <h2 class="product-title">De-Icing Road Salt</h2>
+                            <img src="./assets/salt-type-de_icing-road.jpg" alt="">
+                        </div>
+                        <div class="product-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quasi saepe consectetur ipsum ab. Mollitia eligendi aperiam facere velit officiis laborum deserunt voluptas aliquid nobis, dolor recusandae adipisci harum eos.</div>
+                    </div>
+                    <div class="product-card" id="food-salt">
+                        <div class="product-img">
+                            <h2 class="product-title">Food Salt</h2>
+                            <img src="./assets/salt-type-food.jpg" alt="">
+                        </div>
+                        <div class="product-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quasi saepe consectetur ipsum ab. Mollitia eligendi aperiam facere velit officiis laborum deserunt voluptas aliquid nobis, dolor recusandae adipisci harum eos.</div>
+                    </div>
+                    <div class="product-card" id="industrial-salt">
+                        <div class="product-img">
+                            <h2 class="product-title">Industrial Salt</h2>
+                            <img src="./assets/salt-type-industrial.jpg" alt="">
+                        </div>
+                        <div class="product-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quasi saepe consectetur ipsum ab. Mollitia eligendi aperiam facere velit officiis laborum deserunt voluptas aliquid nobis, dolor recusandae adipisci harum eos.</div>
+                    </div>
+                    <div class="product-card" id="natural-salt">
+                        <div class="product-img">
+                            <h2 class="product-title">Natural Raw Salt</h2>
+                            <img src="./assets/salt-type-natural-raw.jpg" alt="">
+                        </div>
+                        <div class="product-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quasi saepe consectetur ipsum ab. Mollitia eligendi aperiam facere velit officiis laborum deserunt voluptas aliquid nobis, dolor recusandae adipisci harum eos.</div>
+                    </div>
+                    <div class="product-card" id="water-salt">
+                        <div class="product-img">
+                            <h2 class="product-title">Water Treatment Salt</h2>
+                            <img src="./assets/salt-type-water-treatment.jpg" alt="">
+                        </div>
+                        <div class="product-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quasi saepe consectetur ipsum ab. Mollitia eligendi aperiam facere velit officiis laborum deserunt voluptas aliquid nobis, dolor recusandae adipisci harum eos.</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="content footer-content">
+                <div class="logo footer-logo">
+                    <a href="./index.html">
+                        <img src="./assets/footer-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="comp-info">
+                    <span class="info-adress">Atamyrat Nyyazov Avenue, 55/1, Aşgabat, Turkmenistan</span>
+                    <span class="info-phone"><b>Tel:</b><a href="tel:+99364227000"> +993(64) 22-70-00</a></span>
+                    <span class="info-mail"><b>Email:</b><a href="mailto:altynnal95@gmail.com"> altynnal95@gmail.com</a></span>
+                </div>
+                <div class="footer-menu">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a id="top">Products</a></li>
+                            <li><a href="./media.html">Media</a></li>
+                            <li><a href="./about_us.html">About Us</a></li>
+                            <li><a href="./hr.html">HR</a></li>
+                            <li><a href="./contacts.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social">
+                        <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-alt">
+                <div class="content">
+                    <p>Copyright &copy; 2020 Altyn Nal. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

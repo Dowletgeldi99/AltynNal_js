@@ -1,0 +1,10 @@
+.loader-animation {
+    width: 5%;
+    transform: translate(-50%, -50%);
+    animation: circle infinite 1s 0s;
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}

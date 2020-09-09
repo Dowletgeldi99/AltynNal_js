@@ -1,0 +1,181 @@
+[type=radio] {
+    display: none;
+}
+
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-120%, 0, -400px);
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: .5);
+    }
+}
+
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-60%, 0, -200px);
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: .3);
+    }
+}
+
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(60%, 0, -200px);
+    
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: .3);
+    }
+}
+
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(120%, 0, -400px);
+    
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: .5);
+    }
+}
+
+.salt-type {
+    position: relative;
+
+    img {
+        // object-fit: fill;
+        // object-position: center;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &::before {
+        content: "";
+        background: rgba($color: red, $alpha: .3);
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+
+}
+
+#slide1 {
+    &::after {
+        content: "De-Icing Road Salt";
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        width: 80%;
+        font-weight: 500;
+    }
+}
+
+#slide2 {
+    &::after {
+        content: "Food Salt";
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        width: 80%;
+        font-weight: 500;
+    }
+}
+
+#slide3 {
+    &::after {
+        content: "Industrial Salt";
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        width: 80%;
+        font-weight: 500;
+    }
+}
+
+#slide4 {
+    &::after {
+        content: "Natural Raw Salt";
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        width: 80%;
+        font-weight: 500;
+    }
+}
+
+#slide5 {
+    &::after {
+        content: "Water Treatment";
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        width: 80%;
+        font-weight: 500;
+    }
+}

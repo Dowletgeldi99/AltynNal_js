@@ -1,0 +1,14 @@
+.news-section {
+    background-color: rgba($color: #ccc, $alpha: .5);
+    padding: 30px;
+    padding-left: 50px;
+    margin-bottom: 100px;
+
+    .section-title {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        font-family: "Montserrat";
+    }
+}

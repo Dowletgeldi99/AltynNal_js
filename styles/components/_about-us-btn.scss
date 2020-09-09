@@ -1,0 +1,25 @@
+.about-us-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+
+    p {
+        display: inline-block;
+    }
+}
+
+.btn-quality {
+    background: #003056;
+}
+
+.btn-promo {
+    background: #666;
+}
+
+.btn-catalog {
+    background: red;
+}

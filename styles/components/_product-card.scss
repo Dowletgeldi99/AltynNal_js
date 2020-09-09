@@ -1,0 +1,20 @@
+.product-card {
+    border-radius: 15px;
+    width: 30%;
+    height: 15vw;
+    transition: .5s ease;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #ccc;
+    
+    .product-info {
+        display: none;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 1px #666;
+        transition: .5s ease;
+    }
+}

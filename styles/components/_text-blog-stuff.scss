@@ -1,0 +1,35 @@
+.blog-title {
+    z-index: 1;
+}
+
+.blog-text {
+    z-index: 1;
+    max-width: 65%;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1.7px;
+}
+
+.blog-btn {
+    max-width: 200px;
+    width: 200px;
+    text-transform: uppercase;
+    padding: 20px;
+    z-index: 1;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    outline: 0;
+    color: #fff;
+    background: rgba($color: #fff, $alpha: .3);
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: .5s ease;
+
+    &:hover {
+        background: transparent;
+        transition: .5s ease;
+        border: 1px solid #fff;
+    }
+}

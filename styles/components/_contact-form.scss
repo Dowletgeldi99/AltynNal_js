@@ -1,0 +1,107 @@
+.contact-form {
+    max-width: 700px;
+    width: 55%;
+
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        transition: .5s ease;
+
+        label {
+            width: 90%;
+
+            p {
+                padding-left: 10px;
+                text-align: left;
+            }
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border-radius: 30px;
+            outline: none;
+            border: 1px solid #ccc;
+            margin: 10px 0 20px;
+            transition: .3s ease;
+
+            &:hover {
+                border: 1px solid red;
+                transition: .5s ease;
+            }
+
+            &:focus {
+                border: 1px solid  $dirt-blue;
+                transition: .3s ease;
+            }
+        }
+
+        textarea {
+            width: 90%;
+            max-height: 100px;
+            min-height: 40px;
+            padding: 10px;
+            border-radius: 30px;
+            outline: none;
+            border: 1px solid #ccc;
+            margin: 10px 0 20px;
+            resize: vertical;
+            font-family: "Montserrat";
+            font-style: normal;
+            letter-spacing: normal;
+            font-weight: 500;
+            color: #000;
+            transition: .3s ease;
+
+            &:hover,
+            &:focus {
+                border: 1px solid red;
+                transition: .3s ease;
+            }
+
+
+            &::placeholder {
+                font-family: "Montserrat";
+                font-style: normal;
+                letter-spacing: normal;
+                font-weight: 400;
+                color: #666;
+            }
+        }
+
+        #contactFormBtn {
+            width: 30%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            outline: none;
+            border: 2px solid transparent;
+            background-color: red;
+            color: #fff;
+            letter-spacing: 1.6px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: .5s ease;
+            font-family: "Montserrat";
+
+            &:hover {
+                background-color: transparent;
+                border: 2px solid red;
+                color: red;
+                transition: .5s ease;
+            }
+        }
+
+        &:hover {
+            border: 2px solid red;
+            box-shadow: 0 0 20px 10px #ccc;
+            transition: .5s ease;
+        }
+    }
+}
